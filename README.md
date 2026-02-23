@@ -21,6 +21,4 @@
  ###5. What is the difference between preventDefault() and stopPropagation() methods?
  -preventDefault():first stop default browser action,this time does not stop event bubbling this only use form submission and link opening.
 
- -stopPropagation():main works stop event bubbling to parent element ,does not stop default behavior also used to control event flow.
-
-
+-stopPropagation():main works stop event bubbling to parent element ,does not stop default behavior also used to control event flow.
