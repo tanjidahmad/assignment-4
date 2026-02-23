@@ -10,11 +10,20 @@ const jobContainer = document.getElementById("jobContainer");
 const emptyState = document.getElementById("emptyState");
 
 function updateCounts() {
-  total.innerText = jobContainer.children.length;
+  const totalJobs = jobContainer.children.length;
+
+  total.innerText = totalJobs;
   interviewCount.innerText = interviewList.length;
-  rejectedCount.innerText = rejectedList.length;
-  document.getElementById("jobsCount").innerText =
-    jobContainer.children.length + " jobs";
+  rejectedCount.innerText = rejectedList.length;  
+  const visibleCards = [...document.querySelectorAll(".job")]
+    .filter(card => card.style.display !== "none").length;
+  const jobsText =
+    currentFilter === "all"
+      ? `${totalJobs} jobs`
+      : `${visibleCards} of ${totalJobs} jobs`;
+
+  document.getElementById("jobsCount").innerText = jobsText;
+
   toggleEmptyState();
 }
 
@@ -44,6 +53,7 @@ function toggleFilter(filter) {
   });
 
   toggleEmptyState();
+  updateCounts();
 }
 
 jobContainer.addEventListener("click", e => {
