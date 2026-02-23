@@ -25,7 +25,8 @@
 <header class="max-w-6xl mx-auto mb-6">
   <h1 class="text-3xl font-bold text-blue-950 mb-4">Job Application Tracker</h1>
 
-  <div class="grid grid-cols-3 gap-4">
+  <!-- <div class="grid grid-cols-3 gap-4"> -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
     <div class="bg-white p-4 shadow rounded">
       <p>Total</p>
       <p id="total">0</p>
@@ -44,13 +45,15 @@
 <main class="max-w-6xl mx-auto">
 
   <!-- Available Jobs Header -->
-  <div class="flex justify-between items-center mb-4">
+  <!-- <div class="flex justify-between items-center mb-4"> -->
+    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 mb-4">
     <h2 class="text-xl font-semibold">Available Jobs</h2>
     <p id="jobsCount" class="text-gray-500">8 jobs</p>
   </div>
 
   <!-- Filter Buttons -->
-  <div class="mb-6">
+  <!-- <div class="mb-6"> -->
+    <div class="mb-6 flex flex-wrap gap-2">
     <button onclick="toggleFilter('all')" class="filter-btn bg-blue-600 text-white px-4 py-2 rounded" id="all-btn">All</button>
     <button onclick="toggleFilter('interview')" class="filter-btn bg-gray-300 px-4 py-2 rounded" id="interview-btn">Interview</button>
     <button onclick="toggleFilter('rejected')" class="filter-btn bg-gray-300 px-4 py-2 rounded" id="rejected-btn">Rejected</button>
@@ -62,7 +65,8 @@
 
     <!-- Card 1 -->
    
-      <div class="job  bg-white border border-gray-200 rounded-xl shadow-sm p-6 flex justify-between items-start  ">
+       <div class="job  bg-white border border-gray-200 rounded-xl shadow-sm p-6 flex justify-between items-start  ">
+        
       <div>
         <h2 class="company font-bold text-blue-950">Mobile First Corp</h2>
         <p class="position text-gray-500">React Native Developer</p>
@@ -75,11 +79,12 @@
           <button class="rejected-btn text-red-500 border border-red-500 px-3 py-1 cursor-pointer  rounded">REJECTED</button>
         </div>
       </div>
-      <button class="delete-btn text-red-500 border border-red-500 rounded-full p-1 cursor-pointer"><i class="fa-solid fa-trash-can"></i></button>
+    <button class="delete-btn text-red-500 border border-red-500 rounded-full p-1 cursor-pointer"><i class="fa-solid fa-trash-can"></i></button>
     </div>
 
     <!-- Card 2 -->
-    <div class="job  p-6 flex justify-between items-start bg-white border border-gray-200 rounded-xl shadow-sm ">
+     <div class="job  p-6 flex justify-between items-start bg-white border border-gray-200 rounded-xl shadow-sm "> 
+      
       <div>
         <h2 class="company font-bold text-blue-950">WebFlow Agency</h2>
         <p class="position text-gray-500">Web Designer & Developer</p>
@@ -96,8 +101,8 @@
     </div>
 
     <!-- Card 3 -->
-    <div class="job  p-6 flex justify-between items-start bg-white border border-gray-200 rounded-xl shadow-sm ">
-      <div>
+     <div class="job  p-6 flex justify-between items-start bg-white border border-gray-200 rounded-xl shadow-sm "> 
+     <div>
         <h2 class="company font-bold text-blue-950">DataViz Solutions</h2>
         <p class="position text-gray-500">Data Visualization Specialist</p>
         <p class="location text-sm text-gray-500">Boston, MA . Full-time • $125,000 - $165,000 </p>
@@ -112,7 +117,8 @@
     </div>
 
     <!-- Card 4 -->
-    <div class="job  p-6 flex justify-between items-start bg-white border border-gray-200 rounded-xl shadow-sm">
+     <div class="job  p-6 flex justify-between items-start bg-white border border-gray-200 rounded-xl shadow-sm">
+      
       <div>
         <h2 class="company font-bold text-blue-950">CloudFirst Inc</h2>
         <p class="position text-gray-500">Backend Developer</p>
@@ -129,7 +135,8 @@
     </div>
 
     <!-- Card 5 -->
-    <div class="job  p-6 flex justify-between items-start bg-white border border-gray-200 rounded-xl shadow-sm">
+     <div class="job  p-6 flex justify-between items-start bg-white border border-gray-200 rounded-xl shadow-sm"> 
+     
       <div>
         <h2 class="company font-bold text-blue-950">Innovation Labs</h2>
         <p class="position text-gray-500">UI/UX Engineer</p>
@@ -146,7 +153,8 @@
     </div>
 
     <!-- Card 6 -->
-    <div class="job  p-6 flex justify-between items-start bg-white border border-gray-200 rounded-xl shadow-sm">
+     <div class="job  p-6 flex justify-between items-start bg-white border border-gray-200 rounded-xl shadow-sm"> 
+      
       <div>
         <h2 class="company font-bold text-blue-950">MegaCorp Solutions</h2>
         <p class="position text-gray-500">JavaScript Developer</p>
@@ -163,7 +171,8 @@
     </div>
 
     <!-- Card 7 -->
-    <div class="job  p-6 flex justify-between items-start bg-white border border-gray-200 rounded-xl shadow-sm">
+     <div class="job  p-6 flex justify-between items-start bg-white border border-gray-200 rounded-xl shadow-sm"> 
+     
       <div>
         <h2 class="company font-bold text-blue-950">StartupXYZ</h2>
         <p class="position text-gray-500">Full Stack Engineer</p>
@@ -180,7 +189,8 @@
     </div>
 
     <!-- Card 8 -->
-    <div class="job  p-6 flex justify-between items-start bg-white border border-gray-200 rounded-xl shadow-sm " >
+     <div class="job  p-6 flex justify-between items-start bg-white border border-gray-200 rounded-xl shadow-sm " >
+     
       <div>
         <h2 class="company font-bold text-blue-950">TechCorp Industries</h2>
         <p class="position text-gray-500">Senior Frontend Developer</p>
