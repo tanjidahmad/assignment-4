@@ -65,7 +65,7 @@ jobContainer.addEventListener("click", e => {
   
   if (e.target.classList.contains("interview-btn")) {
     card.querySelector(".status").innerHTML =
-      `<span class="bg-green-100 text-green-700 px-2 py-1 rounded text-sm">Interview</span>`;
+      `<span class="bg-green-100 text-green-700 px-2 py-1 rounded text-sm">INTERVIEW</span>`;
 
     if (!interviewList.includes(company)) interviewList.push(company);
     rejectedList = rejectedList.filter(c => c !== company);
@@ -74,7 +74,7 @@ jobContainer.addEventListener("click", e => {
   
   if (e.target.classList.contains("rejected-btn")) {
     card.querySelector(".status").innerHTML =
-      `<span class="bg-red-100 text-red-700 px-2 py-1 rounded text-sm">Rejected</span>`;
+      `<span class="bg-red-100 text-red-700 px-2 py-1 rounded text-sm">REJECTED</span>`;
 
     if (!rejectedList.includes(company)) rejectedList.push(company);
     interviewList = interviewList.filter(c => c !== company);
